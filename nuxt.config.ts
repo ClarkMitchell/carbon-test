@@ -4,6 +4,11 @@ import settings from './app/content/settings/general.json';
 import manifest from './app/content/settings/manifest.json';
 
 const nuxtConfig: Configuration = {
+  target: 'static',
+  render: {
+    injectScripts: false,
+  },
+
   /*
    ** Headers of the page
    */
